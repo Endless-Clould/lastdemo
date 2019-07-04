@@ -19,5 +19,5 @@ from app01 import views
 urlpatterns = [
     # path('admin', admin.site.urls),
     path(r'show/',views.show_msg),
-    path('get_msg/',views.get_msg)
+
 ]

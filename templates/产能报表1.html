@@ -28,37 +28,37 @@
         }
         .msgg{
             font-size: 15px;
-            margin: 3px;
+            margin: 3px;}
 
-        }
+    {#    }#}
         .top1{
             margin: -15px;
         }
         .bow1{
             height: 10px;
         }
-        .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-            padding: 0px;
-            line-height: 1.42857143;
-            vertical-align: top;
-        }
-        .msg22{
-            font-size: 15px;
-        }
-        .panel-body{
-            padding-bottom: 0px;
-        }
-        .panel-heading {
-    padding: 2px 7px;}
-        blockquote, body, button, dd, div, dl, dt, form, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
-    margin-top: -10px;}
+    {#    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{#}
+    {#        padding: 0px;#}
+    {#        line-height: 1.42857143;#}
+    {#        vertical-align: top;#}
+    {#    }#}
+    {#    .msg22{#}
+    {#        font-size: 15px;#}
+    {#    }#}
+    {#    .panel-body{#}
+    {#        padding-bottom: 0px;#}
+    {#    }#}
+    {#    .panel-heading {#}
+    {#padding: 2px 7px;}#}
+    {#    blockquote, body, button, dd, div, dl, dt, form, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {#}
+    {#margin-top: -10px;}#}
 
     </style>
 
 </head>
 <body>
 <div>
-    <h1 style="text-align: center;padding-left: 120px ;padding-top: 20px; font-size: 20px"  >双源当日产量及当月累计产能状况</h1>
+    <h1 style="text-align: center"  >双源当日产量及当月累计产能状况</h1>
     <form action="" method="get">
     <div>
         <div> <!-- 注意：这一层元素并不是必须的 -->
@@ -103,12 +103,12 @@
     <div>
 
     </div>
-    <div style="width: 900px  ; margin: auto">
+    <div style="margin: auto">
         {% for i in MSG %}
             <div>
      <div class="panel panel-default">
         <!-- Default panel contents -->
-        <div class="panel-heading table-hover""><span class="cor2" style="font-size: 18px ;font-weight: bolder" >{{i.plantname}}</span>&nbsp;
+        <div class="panel-heading table-hover""><span class="cor2" style="font-size: 20px ;font-weight: bolder" >{{i.plantname}}</span>&nbsp;
          {% if datetime %}
                 <span>{{datetime}}</span>
           {% else %}
@@ -152,10 +152,10 @@
             <tr class="bow1">
                 <td class="msgg">{{ forloop.counter   }}</td>
                 <td class="msgg">{{foo.cc_type|default:'' }}</td>
-                <td class="msgg">{{foo.in_ex|default:'' }}</td>
-                <td class="msgg">{{foo.plan_day_qty|default:'' }}</td>
-                <td class="msgg">{{foo.day_qty|default:'' }}</td>
-                <td class="msgg">{{foo.cvt_day_qty|default:'' }}</td>
+                <td class="msgg zbbb">{{foo.in_ex|default:'' }}</td>
+                <td class="msgg zbbb">{{foo.plan_day_qty|default:'' }}</td>
+                <td class="msgg zbbb">{{foo.day_qty|default:'' }}</td>
+                <td class="msgg ">{{foo.cvt_day_qty|default:'' }}</td>
                 <td class="msgg">{{foo.work_person|default:'' }}</td>
                 <td class="msgg">{{foo.plan_day_avg_qty|default:'' }}</td>
                 <td class="msgg">{{foo.plan_avg_qty|default:'' }}</td>
